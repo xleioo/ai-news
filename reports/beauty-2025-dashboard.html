@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025 China Online Beauty Market Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#131a2b;
+      --muted:#9aa7bd;
+      --text:#eef3ff;
+      --line:#26314d;
+      --brand:#5aa7ff;
+      --ok:#34d399;
+      --warn:#f59e0b;
+      --vio:#a78bfa;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1020,#0c1428);color:var(--text)}
+    .wrap{max-width:1200px;margin:0 auto;padding:20px}
+    h1{margin:0 0 6px;font-size:24px}
+    .sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+    .grid{display:grid;gap:14px}
+    .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .charts{grid-template-columns:2fr 1.1fr}
+    @media (max-width:960px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.charts{grid-template-columns:1fr}}
+    @media (max-width:640px){.kpis{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+    .kpi-title{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .kpi-value{font-size:28px;font-weight:700;margin-top:8px}
+    .kpi-foot{font-size:12px;color:var(--muted);margin-top:4px}
+    .ok{color:var(--ok)} .warn{color:var(--warn)} .vio{color:var(--vio)}
+    .card h2{margin:0 0 8px;font-size:16px}
+    .legend{font-size:12px;color:var(--muted);margin-top:6px}
+    .insight li{margin:8px 0;line-height:1.5}
+    .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+    button{background:#1d2843;color:#dce7ff;border:1px solid #314067;border-radius:8px;padding:6px 10px;cursor:pointer}
+    button.active{background:var(--brand);border-color:var(--brand);color:#071229}
+    canvas{max-height:320px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>2025 Online Beauty Market Dashboard</h1>
+    <div class="sub">Source: Your industry report knowledge base (chart evidence cards). All values are for 2025 unless noted.</div>
+
+    <section class="grid kpis">
+      <div class="card"><div class="kpi-title">Skincare Market</div><div class="kpi-value">¥252.1B</div><div class="kpi-foot">YoY <span class="warn">+0.3%</span></div></div>
+      <div class="card"><div class="kpi-title">Makeup Market</div><div class="kpi-value">¥94.6B</div><div class="kpi-foot">YoY <span class="ok">+4.0%</span></div></div>
+      <div class="card"><div class="kpi-title">Combined Market</div><div class="kpi-value">¥346.7B</div><div class="kpi-foot">Skincare + Makeup</div></div>
+      <div class="card"><div class="kpi-title">Douyin Makeup Share</div><div class="kpi-value">39% → 46%</div><div class="kpi-foot"><span class="vio">+7pp</span> vs 2024</div></div>
+    </section>
+
+    <section class="grid charts" style="margin-top:14px;">
+      <div class="card">
+        <h2>Category Growth (YoY)</h2>
+        <div class="toolbar" id="catFilter">
+          <button class="active" data-mode="all">All</button>
+          <button data-mode="high">High Growth (&gt;=10%)</button>
+          <button data-mode="steady">Steady (&lt;10%)</button>
+        </div>
+        <canvas id="growthChart"></canvas>
+        <div class="legend">Suncare +8% | Foundation +11% | Fragrance +8% | Cushion +14%</div>
+      </div>
+
+      <div class="card">
+        <h2>Channel Shift (Makeup)</h2>
+        <canvas id="shareChart"></canvas>
+        <div class="legend">Douyin share increased from 39% to 46% (2024→2025).</div>
+      </div>
+
+      <div class="card" style="grid-column:1 / -1;">
+        <h2>Business Takeaways</h2>
+        <ul class="insight">
+          <li><b>Not a broad boom:</b> topline growth is moderate, driven by structural reallocation rather than pure market expansion.</li>
+          <li><b>Channel migration matters most:</b> Douyin keeps gaining share in makeup, indicating sustained traffic and conversion shift.</li>
+          <li><b>Category opportunities:</b> Cushion and foundation show double-digit growth, while suncare and fragrance remain resilient growth buckets.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const categoryData = {
+      labels: ['Suncare', 'Foundation', 'Fragrance', 'Cushion'],
+      growth: [8, 11, 8, 14],
+      sizeB: [11.52, 11.36, 10.65, 9.11]
+    };
+
+    const growthCtx = document.getElementById('growthChart');
+    let growthChart;
+
+    function renderGrowth(mode='all'){
+      const idx = categoryData.labels.map((_,i)=>i).filter(i=>{
+        const g = categoryData.growth[i];
+        if(mode==='high') return g>=10;
+        if(mode==='steady') return g<10;
+        return true;
+      });
+      const labels = idx.map(i=>categoryData.labels[i]);
+      const growth = idx.map(i=>categoryData.growth[i]);
+      const sizes = idx.map(i=>categoryData.sizeB[i]);
+
+      if(growthChart) growthChart.destroy();
+      growthChart = new Chart(growthCtx, {
+        type:'bar',
+        data:{
+          labels,
+          datasets:[
+            {
+              label:'YoY Growth %',
+              data:growth,
+              borderRadius:8,
+              backgroundColor:['#60a5fa','#34d399','#f59e0b','#a78bfa']
+            },
+            {
+              label:'Category Size (¥B)',
+              data:sizes,
+              type:'line',
+              yAxisID:'y1',
+              borderColor:'#f472b6',
+              backgroundColor:'#f472b6',
+              tension:0.3
+            }
+          ]
+        },
+        options:{
+          responsive:true,
+          plugins:{
+            tooltip:{mode:'index',intersect:false},
+            legend:{labels:{color:'#dbe7ff'}}
+          },
+          scales:{
+            x:{ticks:{color:'#c8d7f7'},grid:{color:'#22304d'}},
+            y:{title:{display:true,text:'Growth %',color:'#c8d7f7'},ticks:{color:'#c8d7f7'},grid:{color:'#22304d'}},
+            y1:{position:'right',title:{display:true,text:'Size (¥B)',color:'#fbcfe8'},ticks:{color:'#fbcfe8'},grid:{drawOnChartArea:false}}
+          }
+        }
+      });
+    }
+
+    const shareCtx = document.getElementById('shareChart');
+    new Chart(shareCtx, {
+      type:'line',
+      data:{
+        labels:['2024','2025'],
+        datasets:[
+          {
+            label:'Douyin Share %',
+            data:[39,46],
+            borderColor:'#5aa7ff',
+            backgroundColor:'rgba(90,167,255,.25)',
+            fill:true,
+            tension:.2,
+            pointRadius:5
+          }
+        ]
+      },
+      options:{
+        responsive:true,
+        plugins:{legend:{labels:{color:'#dbe7ff'}}},
+        scales:{
+          x:{ticks:{color:'#c8d7f7'},grid:{color:'#22304d'}},
+          y:{min:30,max:50,ticks:{color:'#c8d7f7'},grid:{color:'#22304d'}}
+        }
+      }
+    });
+
+    document.querySelectorAll('#catFilter button').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        document.querySelectorAll('#catFilter button').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        renderGrowth(btn.dataset.mode);
+      });
+    });
+
+    renderGrowth('all');
+  </script>
+</body>
+</html>
