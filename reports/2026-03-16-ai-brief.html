@@ -1,29 +1,177 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 行业与 X 博主动态双栏日报｜2026-03-16</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 行业与 X 博主动态双栏日报（2026-03-16）</title>
 <style>
-:root{--bg:#f7f3ee;--paper:#fffdf9;--ink:#1b1a17;--muted:#6a655d;--line:#dfd6cb;--accent:#a61e22;--accent2:#b7925b;--shadow:0 18px 40px rgba(28,24,19,.08);}
-*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#f2ede6 0%,#f8f5f0 100%);color:var(--ink);font-family:ui-serif, Georgia, 'Times New Roman', serif;} a{color:inherit} .wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px} .hero{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);padding:28px 20px 22px;border-top:10px solid var(--accent)} .kicker{font:600 12px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)} h1{margin:8px 0 10px;font-size:clamp(34px,7vw,72px);line-height:.95;letter-spacing:-.04em} .dek{max-width:800px;font-size:17px;line-height:1.7;color:var(--muted)} .meta{margin-top:14px;font:500 13px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted)} .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px} @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}} .panel{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);padding:18px} .panel h2{margin:0 0 14px;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)} .item{padding:14px 0;border-top:1px solid var(--line)} .item:first-child{border-top:none;padding-top:0} .item h3{margin:0 0 8px;font-size:24px;line-height:1.12} .item p{margin:0;font-size:16px;line-height:1.7;color:#2e2a25} .source{margin-top:8px;font:500 12px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.08em} .link{display:inline-block;margin-top:8px;font:600 13px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(166,30,34,.25)} .xcard{padding:14px 0;border-top:1px solid var(--line)} .xcard:first-child{border-top:none;padding-top:0} .xhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start} .xname{margin:0;font-size:22px;line-height:1.1} .xstatus{font:600 12px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted)} .xsummary{margin:8px 0 0;font-size:16px;line-height:1.7;color:#2e2a25} .thumb{margin-top:12px;border:1px solid var(--line);background:#eee} .thumb img{display:block;width:100%;height:auto} footer{margin-top:18px;text-align:center;font:500 12px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted)}
+:root{
+  --paper:#f6f1ea; --ink:#171310; --muted:#6d645d; --accent:#a31e22; --card:#fffdf9;
+  --rule:#e6ddd2; --shadow:0 10px 30px rgba(23,19,16,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
+body{font-family:"Times New Roman","Iowan Old Style","Noto Serif SC","Source Serif 4",Georgia,serif;line-height:1.65}
+a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(163,30,34,.28)}
+a:hover{color:var(--accent)}
+.page{max-width:1160px;margin:0 auto;padding:20px 16px 56px}
+.masthead{border-top:8px solid var(--accent);padding:18px 4px 16px;margin-bottom:18px}
+.kicker{font:600 12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+h1{margin:0;font-size:clamp(34px,7vw,70px);line-height:.96;letter-spacing:.02em}
+.deck{margin:14px 0 0;max-width:760px;color:var(--muted);font-size:clamp(15px,2.6vw,19px)}
+.meta{margin-top:10px;color:var(--muted);font-size:13px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media (min-width:900px){.grid{grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:22px}}
+.section{background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);padding:18px}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--rule);margin-bottom:14px}
+.section-title h2{margin:0;font-size:24px;line-height:1.1}
+.section-title span{font-size:12px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.list{display:flex;flex-direction:column;gap:14px}
+.item{padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.item:last-child{padding-bottom:0;border-bottom:none}
+.item h3{margin:0 0 6px;font-size:20px;line-height:1.22}
+.source{font-size:12px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.item p{margin:8px 0 0;font-size:16px}
+.handle{font-size:22px;margin:0 0 6px;line-height:1.1}
+.xmeta{font-size:13px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.thumb{margin-top:12px;border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:#efe8de}
+.thumb img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 </style>
-</head><body>
-<div class="wrap">
-  <section class="hero">
-    <div class="kicker">Daily AI Brief · America/Toronto</div>
-    <h1>AI 行业与 X 动态日报</h1>
-    <p class="dek">今天的版面聚焦两条主线：一边是资本、算力、监管与供应链继续重写 AI 行业节奏；另一边，创作者与从业者在 X 上把产品、方法论与个人判断直接暴露在公众时间线上。我们把这两种速度放进同一页，做成一份适合手机阅读的双栏简报。</p>
-    <div class="meta">2026-03-16 · 双栏排版 · 移动端优先</div>
-  </section>
-  <section class="grid">
-    <article class="panel"><h2>行业 AI 今日新闻</h2>
-      <div class="item"><h3>Trump accuses Iran of using AI to spread disinformation</h3><p>路透报道称，特朗普指控伊朗利用 AI 扩散虚假信息。报道焦点落在地缘政治叙事与生成式内容在舆论战中的作用。</p><div class="source">Reuters</div><a class="link" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPWG1nd2FDOUNqQXJETGRvLUc2RWJOTWRVV1BCcUZTODhVUkV5REFhWUFMdjJCMHhRWnJuUlphR0JPeTNEWWdmV0VDT291dEZLQUJqNDl1ZkE5Qjl0VWlqU2tEQzhWRlRxZE9uSFk0RWhYNWhWZThxa0Y0VWpyYUlXS05tQ3h4NWhFNnVBYU9sOXNWYUJNS2dZSEJrUjlrT1NRUmtfX1RvcHVZWWpT?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Meta to Spend Up to $27 Billion on Nebius AI Infrastructure</h3><p>彭博称，Meta 正考虑对 Nebius AI 基础设施投入最高 270 亿美元。资本继续向算力与数据中心倾斜，说明大模型竞争仍在重资产阶段。</p><div class="source">Bloomberg</div><a class="link" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNZkRHb3l3WHN3M3I3NmJtZ1BWZjFDQ2tDTVl5VTM2V3dvTEFQZXZTX3l3bmVxaWlQM2twVFZQWmhUeUUzMnBaMDZoYlEyazExdWlackVyRHZ6QmxRdGItb20ySC1JcGhwa2RBZW9CajI4dWJ4ZlYxZWlNRjZXT3ZERzRmcWY5UDRmN2pSRDQ1LXJnWXptUWVlS2VRNF95Z3JCOS1vQmJ1MWFBRXQ2b1gxQUFxZmQ?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Alibaba Creates AI Tool for Companies to Ride China Agent Craze</h3><p>阿里巴巴推出面向企业的 AI 工具，切入中国市场正在升温的 Agent 热潮。重点不是通用聊天，而是把代理能力装进企业流程与运营场景。</p><div class="source">Bloomberg</div><a class="link" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRVd0U3Q0QmJybVRfWGE0Q3FpcEU3STVGNDhjdERLN2VZTTc5Vk5BOXFjSE1acWp0MWphdnlIQnQ3MzZreG9HN05iMGpxSTczN2lXYXBFV0lxaUMtZjI3ay1EcmJEMXVWTUhtTms2XzhjSDNZMVpVb3pwM2V3alIzVjFNM1YxV29uaGpUS01kSUptZUR1SlUzNjNnQzMyOUs3bzg5UE5lWlUwcl81VGJYQVItNlM?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>China’s No. 2 chipmaker readies 7 nm production as Beijing ramps up self-sufficiency drive</h3><p>路透称，中国第二大芯片制造商正准备推进 7nm 量产。对 AI 产业来说，这意味着上游供应链自主化仍是今年最关键的底层变量之一。</p><div class="source">Reuters</div><a class="link" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOMnZWb0k0NE5VSEYtVjRYTC1CRHNXb1BZdVB5REI1b3dWU2FaSnFsdU0tNnFyek94b2F1NFNwck9ZS2QxM2JlbFppR3ZHcldMQjBGaFJyb0djSHBKcVBTQjZ2LVRLT1lwa2tIamgxbTYxLTQ0TGJuc3JvLUVmdW50TF9XY2NKVmVDVVYtQWxDQ2tqQmNiZF91VVFodjRzNkNpU0VkZlRGSExRQkNQWldMckxqYXVqSkl5ZmhLai1nWlp5NFNYdzFCVzVOcXE?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Breakingviews - China tech&#x27;s old guard lose their AI thunder</h3><p>这篇评论认为，中国老牌科技公司在 AI 叙事中的主导力正在减弱。新一轮竞争更看重模型迭代速度、资本调度和场景化产品落地。</p><div class="source">Reuters</div><a class="link" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOVUFBZ0xIQ1NjY2NkaElmV2pOTHhSLVNYVlFPQ1N1UkJUa3BaUEUzLXVTamRWOGpuZE1TNW1jVEs5Wmo4T2tvX2NVQ2Z1aGJ1UXlCTXdieEdhSkZOaEZHM1JjdUZYblpxNTlUY2NQcHVXTUdpbUtpakdkbWVKRDB0UHdKZWh5bWVhUkVMc3ZEWVNibWRLT0lydXM0a3diX0pvTlJsYV9tZw?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>AI companies want to harvest improv actors’ skills to train AI on human emotion</h3><p>The Verge 报道，一些 AI 公司希望通过即兴演员训练模型的情绪表达与语气切换能力。这把“更像人”背后的劳动、版权与伦理问题重新推到台前。</p><div class="source">The Verge</div><a class="link" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQa3F5QndNdVhvOEVkWlAwS2padXJCWHYwaUpBS0NZbjlab0hvSHNlTzdHcThHY1BFTlBXWTJoYVIxUHRiOFRxRkw3OW1yMk82TFdWOW16NEtsZHVfNUlVYnZIOHVud3pqbUpHMGsyd2NORzg0NDNXUmlKR2VKRzM4aVpoUnNjOWUwaktJQWZ1MG53YlF4NWliS2hsZjc0aTFVazhOTUJNQ2RaeHFIdXc?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Ruthenium prices hit record high as AI boom squeezes supply</h3><p>随着 AI 相关需求挤压供给，钌价升至纪录高位。材料端的涨价提醒市场：AI 热潮不仅影响模型与应用，也在推高硬件链条成本。</p><div class="source">Reuters</div><a class="link" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa0gzQm1HWHE5UzNyQVpmeXBpYlJQMjAzOWt1WmhoS01UYU51LUFnc1dHRXdzLVZOVVl0al9TdmhKSjlSZE9HSEpVZlRVNnNUb1NCWk5DRjY2SWNnTzVqQ1R4WWMtVGc2WTN4WTM4a040djVCQVNoYm5WUGxOQVd2UHFJZ29QdFBXMTdhU3FkalFmVHRKcE9jN3Bkc0g2T19EU3VGdWVHcmY?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Lawyer behind AI psychosis cases warns of mass casualty risks</h3><p>TechCrunch 报道，参与 AI 精神失序相关案件的律师警告此类风险可能进一步外溢。行业对模型安全、心理影响和责任边界的讨论正在加速升温。</p><div class="source">TechCrunch</div><a class="link" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNcmF5NHF6TzhMaVJPbDZIS0VQdUM3V0pEVEdEMHdmN19TNmR1RzBRbzBQQTYwcW5Ld0lFQ0d5TjFXbjBCampFZDFNb2NxMDJtYzNWcmpnWERQZHZaTFZRM0ZDVjRIZDV3by1FVU9ZblIxTldYX0EyYkxjTEh1SzlFbVVQb0dXOG04VWxlZlM2SzVjQmRDaS11NHcxMU4?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Breakingviews - OpenAI&#x27;s AGI chase is tricky concept and contract</h3><p>路透评论指出，OpenAI 对 AGI 的追逐不只是技术问题，也牵涉复杂的合同定义与治理安排。资本合作、组织使命与法律文本之间的张力仍在扩大。</p><div class="source">Reuters</div><a class="link" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOVJXdi1tRm5Gd1lhQ1k1MVVVWXBxV0Z0TkF2RGExY1BRWjB0bFBWazJpTXJNLXRfaF9tbjl4U1dsR1Q0eWxjM3lVajNHWEEzVy1UUEY5dlVUSUEtR1U4UkpPbkJZLWlyRGR2S3oyakxVZTdUVDNFeW42WXdGZV9FUU8zTVhyS2FVWHp3b052SXNTWUotcGVCcHRhM0xsWndsN0hpaXN0WXk?oc=5" target="_blank" rel="noopener">阅读链接</a></div><div class="item"><h3>Google, Accel India accelerator chooses 5 startups and none are ‘AI wrappers’</h3><p>Google 与 Accel India 最新孵化名单刻意避开“纯套壳”项目。资金风向正在更明确地奖励有技术深度、行业能力或分发优势的团队。</p><div class="source">TechCrunch</div><a class="link" href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOVTlXcnUtZEtjcVVlQ2FPZTdtODVJU2dobS1tNE83UUdRNXRnTUhTWkJHemhnREZXTUxXRzhqVnEyeTRpVE5LUWgxR0RVSldtM29nRVFkTXBrSVY0NF8xNnRHOVNoQVNBN3o1MVVtN2VtbzZpWlRVUjB4dGhNeHNFTm10anhfQUhFdW5uLXBlOXd3ZGwwZW5ma2ZzUk9lYjJLdFhXVDZIcy13dUJmN1c2X05RTEtPcnpfLUh5Y2l3dVZJaW9Y?oc=5" target="_blank" rel="noopener">阅读链接</a></div>
-    </article>
-    <article class="panel"><h2>指定 X 账号 Status</h2>
-      <div class="xcard"><div class="xhead"><h3 class="xname">@AndrewYNg</h3><div class="xstatus"><a class="link" href="https://x.com/AndrewYNg/status/1098331008544399360" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/Dz4K6nCU0AE-LkI?format=jpg&amp;name=small" alt="@AndrewYNg 配图"></div></div><div class="xcard"><div class="xhead"><h3 class="xname">@Steve_Yegge</h3><div class="xstatus"><a class="link" href="https://x.com/Steve_Yegge/status/1965991591367295403" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/G0iZunRbkAAr8sr?format=jpg&amp;name=small" alt="@Steve_Yegge 配图"></div></div><div class="xcard"><div class="xhead"><h3 class="xname">@openclaw</h3><div class="xstatus"><a class="link" href="https://x.com/openclaw/status/2032694713493406060" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p></div><div class="xcard"><div class="xhead"><h3 class="xname">@nrqa__</h3><div class="xstatus"><a class="link" href="https://x.com/nrqa__/status/1787490474489762233" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/GM5xHNJbMAA91-7?format=jpg&amp;name=small" alt="@nrqa__ 配图"></div></div><div class="xcard"><div class="xhead"><h3 class="xname">@alterxyz4</h3><div class="xstatus">未获取到可公开状态链接</div></div><p class="xsummary">{html.escape(a["summary"])}</p></div><div class="xcard"><div class="xhead"><h3 class="xname">@indigox</h3><div class="xstatus"><a class="link" href="https://x.com/indigox/status/1963410442455585108" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/Gz9vMtubAAAjOvb?format=jpg&amp;name=small" alt="@indigox 配图"></div></div><div class="xcard"><div class="xhead"><h3 class="xname">@AnthropicAI</h3><div class="xstatus"><a class="link" href="https://x.com/AnthropicAI/status/2029978909207617634" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/HCvuR1DaAAEjvhO?format=jpg&amp;name=small" alt="@AnthropicAI 配图"></div></div><div class="xcard"><div class="xhead"><h3 class="xname">@bcherny</h3><div class="xstatus"><a class="link" href="https://x.com/bcherny/status/1988860326306087102" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/G5nZ7Eob0AAAutv?format=jpg&amp;name=small" alt="@bcherny 配图"></div></div><div class="xcard"><div class="xhead"><h3 class="xname">@zhengyun</h3><div class="xstatus">未获取到可公开状态链接</div></div><p class="xsummary">{html.escape(a["summary"])}</p></div><div class="xcard"><div class="xhead"><h3 class="xname">@fankaishuoai</h3><div class="xstatus"><a class="link" href="https://x.com/fankaishuoai/status/1102410490804756480" target="_blank" rel="noopener">Status</a></div></div><p class="xsummary">{html.escape(a["summary"])}</p><div class="thumb"><img src="https://pbs.twimg.com/media/D0yMe2sWoAATj96?format=jpg&amp;name=900x900" alt="@fankaishuoai 配图"></div></div>
-    </article>
-  </section>
-  <footer>Published for GitHub Pages · Editorial layout with responsive card grid.</footer>
-</div>
-</body></html>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="kicker">AI Daily Brief</div>
+      <h1>Today in AI</h1>
+      <p class="deck">一份偏杂志感的双栏日报：左栏看主流媒体中的 AI 产业线索，右栏看指定 X 账号的公开动态。尽量保留信息密度，同时让移动端阅读不费力。</p>
+      <div class="meta">2026-03-16 · America/Toronto · 主流媒体 10 条 + 指定账号公开动态</div>
+    </header>
+
+    <section class="grid">
+      <section class="section">
+        <div class="section-title">
+          <h2>行业 AI 今日新闻</h2>
+          <span>10 Stories</span>
+        </div>
+        <div class="list">
+          <article class="item">
+            <h3><a href="https://www.reuters.com/world/asia-pacific/chinas-no-2-chipmaker-readies-7-nm-production-beijing-ramps-up-self-suffiency-2026-03-16/">Exclusive: China’s No. 2 chipmaker readies 7 nm production as Beijing ramps up self-sufficiency drive</a></h3>
+            <div class="source">Reuters</div>
+            <p>路透报道称，华虹集团已掌握可用于 AI 芯片的先进制造工艺，并准备推进 7nm 量产。这被视为中国在高端芯片自主化上的又一关键节点。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://www.reuters.com/commentary/breakingviews/openais-agi-chase-is-tricky-concept-contract-2026-03-16/">Breakingviews - OpenAI's AGI chase is tricky concept and contract</a></h3>
+            <div class="source">Reuters</div>
+            <p>评论指出，OpenAI 对 AGI 的追逐不只是技术问题，也牵动与合作伙伴之间的契约边界。随着“何时算 AGI”变得更现实，商业安排的模糊地带也在被放大。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://www.reuters.com/business/media-telecom/trump-accuses-iran-using-ai-spread-disinformation-2026-03-16/">Trump accuses Iran of using AI to spread disinformation</a></h3>
+            <div class="source">Reuters</div>
+            <p>报道聚焦 AI 被卷入地缘政治宣传战的最新案例。争议焦点在于，生成式工具正让信息操控更低成本、更高频地扩散。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/">A roadmap for AI, if anyone will listen</a></h3>
+            <div class="source">TechCrunch</div>
+            <p>TechCrunch 关注一份试图为负责任 AI 发展提供框架的跨党派路线图。文章认为，在监管与产业拉扯之下，真正缺的不是讨论，而是可执行的共识。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://techcrunch.com/2026/03/10/ai-powered-apps-struggle-with-long-term-retention-new-report-shows/">AI-powered apps struggle with long-term retention, new report shows</a></h3>
+            <div class="source">TechCrunch</div>
+            <p>最新报告显示，AI 应用虽然更容易变现，但长期留存仍不稳定。也就是说，爆发式增长不必然转化为稳定用户关系。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://techcrunch.com/2026/03/15/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/">Lawyer behind AI psychosis cases warns of mass casualty risks</a></h3>
+            <div class="source">TechCrunch</div>
+            <p>文章引用相关案件律师的判断，认为聊天机器人在极端情境下的风险正从个体伤害扩展到更广泛的公共安全层面。核心问题仍是能力提升快于防护机制落地。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/">Yann LeCun's AMI Labs raises $1.03B to build world models</a></h3>
+            <div class="source">TechCrunch</div>
+            <p>Yann LeCun 联合创办的 AMI Labs 完成 10.3 亿美元融资，主打“世界模型”方向。市场显然仍在押注超越纯语言范式的下一代 AI 叙事。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://www.theverge.com/ai-artificial-intelligence/891724/nbc-news-march-2026-poll-ai-ice">National poll shows voters like AI less than ICE.</a></h3>
+            <div class="source">The Verge</div>
+            <p>一项全美民调显示，公众对 AI 的整体观感依然偏冷。即便使用率在上升，信任与好感并没有同步建立。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://www.theverge.com/ai-artificial-intelligence/895030/palantirs-maven-smart-system-is-an-ai-powered-kanban-board-for-killing-people">Palantir’s Maven Smart System is an AI-powered Kanban board for killing people.</a></h3>
+            <div class="source">The Verge</div>
+            <p>The Verge 以强烈措辞讨论 Palantir 的军用 AI 指挥系统，将其描述为把目标选择流程进一步产品化。报道把焦点放在军事自动化与伦理边界的急剧收缩上。</p>
+          </article>
+          <article class="item">
+            <h3><a href="https://www.theverge.com/ai-artificial-intelligence/893625/anthropic-claude-ai-charts-diagrams">Anthropic’s Claude AI can respond with charts, diagrams, and other visuals now</a></h3>
+            <div class="source">The Verge</div>
+            <p>Claude 现在可以在回答中直接生成图表、图解和其他视觉化内容。这个更新意味着对话式 AI 正进一步从“会说”走向“会展示”。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>X 账号 status</h2>
+          <span>10 Accounts</span>
+        </div>
+        <div class="list">
+          <article class="item">
+            <h3 class="handle">AndrewYNg</h3>
+            <div class="xmeta"><a href="https://x.com/AndrewYNg/status/2008956639894786402">status 链接</a></div>
+            <p>置顶动态主推一门面向零基础用户的 AI 编程入门课，强调用自然语言描述创意，也能快速做出一个可运行的小型 Web 应用。</p>
+          </article>
+          <article class="item">
+            <h3 class="handle">Steve_Yegge</h3>
+            <div class="xmeta"><a href="https://x.com/Steve_Yegge/status/1898674257808515242">status 链接</a></div>
+            <p>分享使用 Claude Code 处理遗留代码库缺陷的体验，核心判断是编码代理已经能在真实老系统里承担高强度修复工作。</p>
+          </article>
+          <article class="item">
+            <h3 class="handle">openclaw</h3>
+            <div class="xmeta"><a href="https://x.com/openclaw/status/2032694713493406060">status 链接</a></div>
+            <p>感谢 NVIDIA 工程师协助排查安全通告，语气上明显在强调开源项目也能获得高水平安全协作支持。</p>
+          </article>
+          <article class="item">
+            <h3 class="handle">nrqa__</h3>
+            <div class="xmeta"><a href="https://x.com/nrqa__/status/1787490474489762233">status 链接</a></div>
+            <p>用强传播风格介绍一款替代 Canva 的视觉设计工具，重点仍是“一键生成更好看内容”的效率叙事。</p>
+            <div class="thumb"><img src="https://pbs.twimg.com/media/GM5xHNJbMAA91-7?format=jpg&amp;name=medium" alt="nrqa__ 配图" loading="lazy" /></div>
+          </article>
+          <article class="item">
+            <h3 class="handle">alterxyz4</h3>
+            <div class="xmeta">未获取到可公开 status 链接</div>
+            <p>公开页面未解析到可引用动态，当前无法确认最新可公开 status。</p>
+          </article>
+          <article class="item">
+            <h3 class="handle">indigox</h3>
+            <div class="xmeta"><a href="https://x.com/indigox/status/1963410442455585108">status 链接</a></div>
+            <p>置顶内容在为自己的 YouTube 频道和直播计划导流，提到会持续聊科技加速主义、AI 时代的人生算法与访谈内容。</p>
+            <div class="thumb"><img src="https://pbs.twimg.com/media/Gz9vMtubAAAjOvb?format=jpg&amp;name=medium" alt="indigox 配图" loading="lazy" /></div>
+          </article>
+          <article class="item">
+            <h3 class="handle">AnthropicAI</h3>
+            <div class="xmeta"><a href="https://x.com/AnthropicAI/status/2031674087374815577">status 链接</a></div>
+            <p>宣布成立 The Anthropic Institute，目标是推动关于强大 AI 的公共讨论，把研究、政策与社会影响议题拉到更前台。</p>
+          </article>
+          <article class="item">
+            <h3 class="handle">bcherny</h3>
+            <div class="xmeta"><a href="https://x.com/bcherny/status/1988860326306087102">status 链接</a></div>
+            <p>介绍 Claude Code 新版 WebFetch 会自动偏好 markdown 响应，以便在抓取文档时更节省上下文与成本。</p>
+            <div class="thumb"><img src="https://pbs.twimg.com/media/G5nZ7Eob0AAAutv?format=jpg&amp;name=medium" alt="bcherny 配图" loading="lazy" /></div>
+          </article>
+          <article class="item">
+            <h3 class="handle">zhengyun</h3>
+            <div class="xmeta">未获取到可公开 status 链接</div>
+            <p>公开时间线未解析到可引用动态，当前无法确认最新可公开 status。</p>
+          </article>
+          <article class="item">
+            <h3 class="handle">fankaishuoai</h3>
+            <div class="xmeta"><a href="https://x.com/fankaishuoai/status/2004610556398109058">status 链接</a></div>
+            <p>置顶长帖回顾个人品牌投入的长期价值，虽然不是单纯产品快讯，但明显指向其后续会持续输出 AI 观察与内容经营。</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <div class="footer">AI 行业与 X 博主动态双栏日报 · 2026-03-16</div>
+  </main>
+</body>
+</html>
