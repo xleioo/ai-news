@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Brief — 2026-05-28</title>
+  <style>
+    :root {
+      --ink: #191715;
+      --muted: #706960;
+      --paper: #f7f2ea;
+      --panel: #fffaf2;
+      --rule: #d8cbb9;
+      --accent: #b21f2d;
+      --gold: #b08a45;
+      --shadow: 0 18px 45px rgba(42, 34, 25, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(178,31,45,.045) 0 1px, transparent 1px 100%),
+        var(--paper);
+      background-size: 24px 24px;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .page { width: min(1180px, 100%); margin: 0 auto; padding: 18px; }
+    .cover {
+      min-height: 54vh;
+      display: grid;
+      align-content: end;
+      gap: 18px;
+      padding: 28px 0 32px;
+      border-bottom: 4px solid var(--ink);
+    }
+    .kicker {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding: 8px 0;
+      font: 700 12px/1.2 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 980px;
+      font-size: clamp(54px, 18vw, 174px);
+      line-height: .78;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .dek {
+      max-width: 780px;
+      margin: 0;
+      color: #3f3932;
+      font-size: clamp(19px, 4.8vw, 34px);
+      line-height: 1.12;
+    }
+    .meta {
+      display: grid;
+      gap: 7px;
+      color: var(--muted);
+      font: 600 12px/1.35 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      padding: 28px 0 36px;
+    }
+    section {
+      background: rgba(255,250,242,.78);
+      border-top: 2px solid var(--ink);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 10px;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(24px, 8vw, 46px);
+      line-height: .95;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    .count {
+      color: var(--accent);
+      font: 800 12px/1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .story, .status {
+      display: grid;
+      gap: 8px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .story:last-child, .status:last-child { border-bottom: 0; }
+    .num {
+      color: var(--gold);
+      font: 800 12px/1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .08em;
+    }
+    h3 {
+      margin: 0;
+      font-size: clamp(21px, 5.8vw, 31px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+    p { margin: 0; font-size: 16px; }
+    .source, .handle {
+      color: var(--accent);
+      font: 800 12px/1.25 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .handle { color: var(--ink); }
+    .status p { color: #3f3932; }
+    footer {
+      padding: 18px 0 34px;
+      border-top: 1px solid var(--ink);
+      color: var(--muted);
+      font: 600 12px/1.35 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    @media (min-width: 820px) {
+      .page { padding: 30px; }
+      .cover { min-height: 62vh; padding-top: 38px; }
+      .meta { grid-template-columns: repeat(3, 1fr); }
+      .grid { grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr); align-items: start; gap: 30px; }
+      section { padding: 24px; }
+      .story { grid-template-columns: 44px minmax(0, 1fr); column-gap: 16px; }
+      .story .num { padding-top: 7px; }
+      .story h3, .story p, .story .source { grid-column: 2; }
+      .story .num { grid-row: 1 / span 4; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="cover">
+      <div class="kicker"><span>AI Daily Brief</span><span>Toronto Morning</span></div>
+      <h1>AI<br>Now</h1>
+      <p class="dek">Ten mainstream AI stories and a watched-list scan of X accounts, edited for quick reading without invented metrics.</p>
+      <div class="meta">
+        <span>Thursday, May 28, 2026</span>
+        <span>America/Toronto · 8:00 AM</span>
+        <span>Industry + X Status</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section aria-labelledby="industry">
+        <div class="section-head">
+          <h2 id="industry">Industry</h2>
+          <span class="count">10 stories</span>
+        </div>
+
+        <article class="story">
+          <div class="num">01</div>
+          <h3><a href="https://www.reuters.com/business/media-telecom/mistral-defends-ai-use-warfare-rebuts-pope-criticism-2026-05-28/">Mistral rejects Pope Leo criticism of AI military use</a></h3>
+          <p>Mistral defended the use of AI in warfare after Pope Leo XIV criticized military deployment of the technology. The exchange keeps European AI policy tied to both strategic autonomy and moral limits around autonomy in conflict.</p>
+          <div class="source">Reuters</div>
+        </article>
+
+        <article class="story">
+          <div class="num">02</div>
+          <h3><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYVNETTY1N294NHRGb08waFRWLWVJOG1VVkdUZkpLSXBuNlUxMUxRX3BfVmt3WFNEWThfM2VSYnJSblRTdUVHNU9JM0tjcjQtWjREYmR4RFJxalhQMTAyZ010QVYzZ0JTRjRBcjdhQ3RpcUxWeEFLS2JDN2tNdEZsazdvTmR4RE9yQXZmX25zQndHTmxOTU1IM1ZYSnFZcEVYQ1ExTVJqckZGZ2M?oc=5">OpenAI's Altman says AI unlikely to lead to 'jobs apocalypse'</a></h3>
+          <p>Sam Altman said AI is unlikely to trigger the broad employment collapse critics warn about. His remarks frame the near-term labor question around job redesign, adoption speed, and company-level productivity rather than a sudden cliff.</p>
+          <div class="source">Reuters</div>
+        </article>
+
+        <article class="story">
+          <div class="num">03</div>
+          <h3><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNOW9URjlGR292S3RiM3lsWUhmWF9LcGgxMmluXzFabnQzdEpmaUZiME9hTGtmeXBwd2VWLTBMdUxaVGlHRm5sOE55SzFnZUZCY0VfR0JtUlJLVWZMdHhfZVhyb21yeDYwa2NIV3Z0RndnWGplOEdQV3FDcXE1dWZLNjRVSFdzVDdPSy1icTBrZ0R1QUY4YmtGWHY4UlhLN1dUR2NvR0RiU0VqdF9MV2c?oc=5">ByteDance weighs capex of as much as $70 billion in AI push</a></h3>
+          <p>ByteDance is reportedly weighing capital spending as high as $70 billion as it expands AI infrastructure. The number shows how model competition is becoming a contest of chips, data centers, energy access, and balance-sheet tolerance.</p>
+          <div class="source">Bloomberg</div>
+        </article>
+
+        <article class="story">
+          <div class="num">04</div>
+          <h3><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNUVdTeEYtOVpZcWhrcjVIaEpSMHZVdDEwQ3hRbjVUN05CNHRPMGo1TzdtQk12RDA1dmx5S0duQm1mZUQtSHNOU3N2dUhUSWh2NmF0Ynpabzhsd3FISWJabmtvSmZCT2M3aEZYUWIyNk1KSVlIT0djeEVORUZvcGEwalRMamxUYVI3WjY0d2F3aEo1am9OZlNrNGd0d0VNR3VvNjFva1psOUczWEVN?oc=5">Qualcomm strikes AI chip deal with TikTok owner ByteDance</a></h3>
+          <p>Qualcomm reached an AI chip agreement with ByteDance, adding another supplier relationship to the Chinese platform company's AI buildout. The deal points to growing demand for inference capacity outside the usual GPU procurement channels.</p>
+          <div class="source">Bloomberg</div>
+        </article>
+
+        <article class="story">
+          <div class="num">05</div>
+          <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5iNXpmTndZSG02c2h4c1hUUXpNOEJSanI2bGhBSmVzTVRTNzd6dEd6dU5iQUpDRExXR1ZENExmNXdNLXU4SGxkd3BWMGJkLWZBNWNfaUxGdUZuTzdzTHVlSW1pbjNkdzVBcmZyV2FkSVE?oc=5">China overhauls world's biggest surveillance network with advanced AI</a></h3>
+          <p>The Financial Times reports that China is upgrading its large surveillance system with more advanced AI capabilities. The story puts computer vision, public-sector deployment, and civil-liberties questions back into the center of the AI governance debate.</p>
+          <div class="source">Financial Times</div>
+        </article>
+
+        <article class="story">
+          <div class="num">06</div>
+          <h3><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOQXZ3bFEyWkxhRkZ6Z3p3S2ZuLXdXekp6czFHaUNjTGdIdTdTRTIxeEczaTJGVGQ4QmJ6d0N4YXJXV1htX3lrZFRwak94VF80dlotT0JlaXVpRW1lZm1CcmdfTDYxSFZGaWJEQnNIZEkwMjQwTldJU1RwQVNpT2tjUjZMZ0s?oc=5">ByteDance offers AI team special stock to fend off poaching</a></h3>
+          <p>ByteDance is using special stock incentives to retain AI staff as competition for technical talent intensifies. Compensation is increasingly part of AI strategy, especially for teams that can move model quality or infrastructure efficiency.</p>
+          <div class="source">Financial Times</div>
+        </article>
+
+        <article class="story">
+          <div class="num">07</div>
+          <h3><a href="https://www.theverge.com/ai-artificial-intelligence">Your preferred sources for Google will now be highlighted in AI searches</a></h3>
+          <p>Google says preferred sources can now be labeled in AI Overviews and AI Mode. The change is a small but important concession to publishers and users who want more visible provenance inside AI-shaped search results.</p>
+          <div class="source">The Verge</div>
+        </article>
+
+        <article class="story">
+          <div class="num">08</div>
+          <h3><a href="https://www.theverge.com/ai-artificial-intelligence">Amazon Prime Video is adding animated series made with AI</a></h3>
+          <p>Amazon MGM Studios greenlit three animated shows tied to its GenAI Creators' Fund. The move pushes AI-assisted production further into mainstream entertainment, while leaving open questions about craft, cost, and disclosure.</p>
+          <div class="source">The Verge</div>
+        </article>
+
+        <article class="story">
+          <div class="num">09</div>
+          <h3><a href="https://www.theverge.com/ai-artificial-intelligence">ElevenLabs says its updated AI music generator can create genre-switching songs</a></h3>
+          <p>ElevenLabs announced Music v2, a model it says can move between styles such as opera and heavy metal within one track. The company says the model is trained only on licensed data and cleared for commercial use.</p>
+          <div class="source">The Verge</div>
+        </article>
+
+        <article class="story">
+          <div class="num">10</div>
+          <h3><a href="https://www.theverge.com/ai-artificial-intelligence">Amazon wants to power AI shopping assistants at other online stores</a></h3>
+          <p>Amazon is selling access to technology behind its Alexa for Shopping assistant so other retailers can build AI shopping chatbots. The pitch is that retailers can add personalized recommendations, product visuals, pricing, and policy answers without building the full stack themselves.</p>
+          <div class="source">The Verge</div>
+        </article>
+      </section>
+
+      <section aria-labelledby="xstatus">
+        <div class="section-head">
+          <h2 id="xstatus">X Status</h2>
+          <span class="count">10 accounts</span>
+        </div>
+
+        <article class="status"><div class="handle"><a href="https://x.com/AndrewYNg">@AndrewYNg</a></div><p>The accessible public stream continues to highlight AI education and practical upskilling themes, including prompting and the value of learning programming in an AI-heavy workflow. A current single status ID was not reliably exposed in the accessible capture.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/Steve_Yegge">@Steve_Yegge</a></div><p>The visible stream still centers on Claude Code and agentic coding work, including reflections on legacy code cleanup and how AI tooling changes a programmer's relationship with generated implementation details.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/openclaw">@openclaw</a></div><p>The public OpenClaw stream highlights product updates around the Control UI, session search, pagination, and reliability improvements. A current single status ID was not reliably exposed in the accessible capture.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/nrqa__">@nrqa__</a></div><p>The accessible profile output surfaced creative AI/video-generation material, including prompt-to-scene work from image or manga-style inputs. No current single status ID was verified.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/alterxyz4">@alterxyz4</a></div><p>The accessible profile view showed account metadata but did not expose a readable current post, so no status summary is included beyond the profile link.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/indigox">@indigox</a></div><p>The accessible stream led with a YouTube-channel note and older posts about media, attention, build-in-public work, and Gemini image editing. No current single status ID was verified.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/AnthropicAI">@AnthropicAI</a></div><p>Anthropic's visible stream points to engineering and safety communications, including agent sandboxing, vulnerability research, and public discussion around AI policy and deployment.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/bcherny">@bcherny</a></div><p>A current public status could not be read from accessible sources during this run.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/zhengyun">@zhengyun</a></div><p>The accessible profile view showed account metadata but did not expose readable current posts, so no current status was verified.</p></article>
+        <article class="status"><div class="handle"><a href="https://x.com/fankaishuoai">@fankaishuoai</a></div><p>The visible stream includes professional reflection and management notes, with AI commentary appearing further down the profile capture. No current single status ID was verified.</p></article>
+      </section>
+    </div>
+
+    <footer>Generated for the 2026-05-28 Toronto morning brief. Image modules are omitted because no reliable direct media URLs were verified.</footer>
+  </main>
+</body>
+</html>
