@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Brief — 2026-06-02</title>
+<style>
+:root {
+  --paper:#f7f2ea;
+  --ink:#181512;
+  --muted:#70675c;
+  --line:#d8cfc2;
+  --accent:#b01822;
+  --accent2:#123d5a;
+  --card:#fffaf2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.55;
+}
+a { color:inherit; text-decoration:none; }
+a:hover { color:var(--accent); }
+.page { max-width:1180px; margin:0 auto; padding:22px 18px 44px; }
+.masthead {
+  border-top:6px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+  padding:18px 0 22px;
+}
+.issue {
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  color:var(--muted);
+  font:600 12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+h1 {
+  margin:16px 0 8px;
+  font-size:clamp(42px, 12vw, 124px);
+  line-height:.86;
+  letter-spacing:0;
+  text-transform:uppercase;
+}
+.deck {
+  max-width:760px;
+  margin:0;
+  color:#2d2924;
+  font-size:clamp(18px, 4.6vw, 28px);
+  line-height:1.25;
+}
+.main-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:26px;
+  margin-top:28px;
+}
+.section-head {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:14px;
+  border-bottom:2px solid var(--ink);
+  margin-bottom:14px;
+  padding-bottom:8px;
+}
+.section-head h2 {
+  margin:0;
+  font-size:26px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.section-head span {
+  color:var(--muted);
+  font:600 12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  text-transform:uppercase;
+}
+.stack { display:grid; gap:14px; }
+.card {
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:16px;
+  min-width:0;
+}
+.kicker {
+  color:var(--accent);
+  font:700 12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:9px;
+}
+.card h3 {
+  margin:0 0 8px;
+  font-size:22px;
+  line-height:1.12;
+  letter-spacing:0;
+}
+.card p {
+  margin:0;
+  color:#373029;
+  font-size:16px;
+}
+.x-card h3 {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.note {
+  margin-top:18px;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font:500 13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+@media (min-width: 820px) {
+  .page { padding:34px 28px 64px; }
+  .main-grid { grid-template-columns:minmax(0,1.22fr) minmax(300px,.78fr); align-items:start; }
+  .news .stack { grid-template-columns:1fr 1fr; }
+  .news-card:first-child { grid-column:1 / -1; padding:22px; }
+  .news-card:first-child h3 { font-size:34px; }
+  .x .stack { gap:12px; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <div class="issue"><span>AI Daily Brief</span><span>2026-06-02 · Toronto 08:00</span></div>
+    <h1>AI Brief</h1>
+    <p class="deck">资本开支、AI PC、模型安全与平台级代理继续主导今天的 AI 议程：基础设施的钱越来越大，产品责任的问题也越来越近。</p>
+  </header>
+  <div class="main-grid">
+    <section class="news">
+      <div class="section-head"><h2>Today's Ten</h2><span>Mainstream Sources</span></div>
+      <div class="stack"><article class="card news-card">
+  <div class="kicker">01 · Financial Times</div>
+  <h3><a href="https://www.ft.com/content/2fe1fff9-f619-4a25-9b30-05bdc3bdea70" target="_blank" rel="noopener">Google&#x27;s $80bn equity raise adds to that giant AI sucking sound</a></h3>
+  <p>Financial Times says Google&#x27;s planned equity raise shows how AI infrastructure has pushed already-large technology capital needs into a new scale. The piece frames the raise as another sign that demand for AI compute is reshaping balance sheets across Big Tech.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">02 · Financial Times</div>
+  <h3><a href="https://www.ft.com/content/0030504e-6f65-445c-9379-7b75924051c6" target="_blank" rel="noopener">Tencent moves closer to launching AI agent for China&#x27;s most-used app</a></h3>
+  <p>Financial Times reports Tencent is moving toward an AI agent for WeChat as it tries to close distance with domestic AI rivals. The focus is on bringing agentic AI into a daily-use consumer platform rather than a standalone chatbot.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">03 · Financial Times</div>
+  <h3><a href="https://www.ft.com/content/17bf8aa3-c5f7-4cd3-a67e-8de580509525" target="_blank" rel="noopener">Will the IT consulting share price rout ever end?</a></h3>
+  <p>Financial Times examines why investors are punishing IT consulting groups even though they benefited from earlier technology waves. The concern is that AI could automate parts of their services model instead of simply creating another consulting boom.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">04 · Financial Times</div>
+  <h3><a href="https://www.ft.com/content/53e14bcc-788c-4959-b260-7aee363594bc" target="_blank" rel="noopener">Top AI labs expand research into machine consciousness</a></h3>
+  <p>Financial Times reports that Google DeepMind, Anthropic and Meta are studying whether advanced AI systems could become conscious and what obligations might follow. The story shows safety research expanding beyond capability and alignment into more philosophical risk questions.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">05 · Financial Times</div>
+  <h3><a href="https://www.ft.com/content/678882e8-baa8-4b83-afb6-f1560ffdf76d" target="_blank" rel="noopener">Florida sues OpenAI and Altman for &#x27;hurting&#x27; children</a></h3>
+  <p>Financial Times reports Florida filed a lawsuit alleging harms from OpenAI&#x27;s chatbots. The case adds to the growing legal and regulatory pressure around AI safety, youth use and product liability.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">06 · TechCrunch</div>
+  <h3><a href="https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/" target="_blank" rel="noopener">Alphabet plans to raise $80B to pay for AI buildout</a></h3>
+  <p>TechCrunch reports Alphabet plans to raise $80 billion, citing demand for AI products and services that exceeds available supply. The move underlines how quickly AI infrastructure spending is becoming a financing story, not just a product story.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">07 · TechCrunch</div>
+  <h3><a href="https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/" target="_blank" rel="noopener">Nvidia chases $200B CPU market with AI agent PCs from Microsoft, Dell, and HP</a></h3>
+  <p>TechCrunch reports Nvidia is pushing into AI agent PCs through partners including Microsoft, Dell and HP. The strategic bet is that agentic AI workloads can move from data centers into mainstream personal computing hardware.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">08 · TechCrunch</div>
+  <h3><a href="https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/" target="_blank" rel="noopener">Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents</a></h3>
+  <p>TechCrunch says Florida&#x27;s lawsuit partly centers on a prior shooting and allegations about ChatGPT&#x27;s role. The complaint represents an escalation in how state officials are testing legal accountability for chatbot-related harm claims.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">09 · TechCrunch</div>
+  <h3><a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" target="_blank" rel="noopener">Anthropic files to go public</a></h3>
+  <p>TechCrunch reports Anthropic has filed to go public after growing from an AI challenger into a major enterprise-focused AI company. The filing puts the company on a public-market path while investor attention around foundation-model economics remains intense.</p>
+</article>
+<article class="card news-card">
+  <div class="kicker">10 · The Verge</div>
+  <h3><a href="https://www.theverge.com/tech/941215/windows-laptops-nvidia-rtx-spark-apple-m1-arm-price-ram" target="_blank" rel="noopener">This could be Windows&#x27; M1 moment — but expect it to cost a ton</a></h3>
+  <p>The Verge analyzes Nvidia&#x27;s RTX Spark laptop-chip push and why it could matter for Windows machines. The story argues that Arm-based AI PCs may become strategically important, while price and value remain open questions.</p>
+</article></div>
+    </section>
+    <section class="x">
+      <div class="section-head"><h2>X Status</h2><span>Verified Only</span></div>
+      <div class="stack"><article class="card x-card">
+  <div class="kicker">@AndrewYNg</div>
+  <h3><a href="https://x.com/AndrewYNg" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@Steve_Yegge</div>
+  <h3><a href="https://x.com/Steve_Yegge" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@openclaw</div>
+  <h3><a href="https://x.com/openclaw" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@nrqa__</div>
+  <h3><a href="https://x.com/nrqa__" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@alterxyz4</div>
+  <h3><a href="https://x.com/alterxyz4" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@indigox</div>
+  <h3><a href="https://x.com/indigox" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@AnthropicAI</div>
+  <h3><a href="https://x.com/AnthropicAI" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@bcherny</div>
+  <h3><a href="https://x.com/bcherny" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@zhengyun</div>
+  <h3><a href="https://x.com/zhengyun" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article>
+<article class="card x-card">
+  <div class="kicker">@fankaishuoai</div>
+  <h3><a href="https://x.com/fankaishuoai" target="_blank" rel="noopener">Profile</a></h3>
+  <p>本次抓取未检索到可验证的公开 status 链接；为避免误报，未写入具体动态。</p>
+</article></div>
+      <p class="note">说明：本次公开抓取未取得这些账号的可验证 status 原文链接；报告保留账号入口，但不补写未经确认的内容、时间、互动数据或图片。</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>
