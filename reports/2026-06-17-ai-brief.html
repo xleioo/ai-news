@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Brief — 2026-06-17</title>
+  <style>
+    :root {
+      --paper: #f7f2ea;
+      --ink: #17120f;
+      --muted: #6d6259;
+      --rule: #d7c9ba;
+      --accent: #b21824;
+      --soft: #fffaf2;
+      --shadow: rgba(23, 18, 15, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration-color: rgba(178, 24, 36, .45); text-underline-offset: 3px; }
+    .page { width: min(1120px, 100%); margin: 0 auto; padding: 24px 18px 52px; }
+    .cover {
+      border-top: 8px solid var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding: 20px 0 26px;
+      margin-bottom: 22px;
+    }
+    .kicker {
+      color: var(--accent);
+      font: 700 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(44px, 13vw, 112px);
+      line-height: .86;
+      letter-spacing: 0;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .deck {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 4.6vw, 25px);
+      line-height: 1.25;
+    }
+    .meta {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      color: var(--muted);
+      font: 600 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    section {
+      min-width: 0;
+    }
+    .section-head {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    .count {
+      color: var(--muted);
+      font: 700 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .stack { display: grid; gap: 12px; }
+    article, .x-card {
+      background: var(--soft);
+      border: 1px solid var(--rule);
+      box-shadow: 0 10px 28px var(--shadow);
+      padding: 16px;
+    }
+    .num {
+      color: var(--accent);
+      font: 800 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 12px; color: #302822; }
+    .source {
+      color: var(--muted);
+      font: 700 12px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .note {
+      background: transparent;
+      border: 1px solid var(--rule);
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    .handle {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .handle strong {
+      font: 800 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .handle a {
+      color: var(--accent);
+      font: 700 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-transform: uppercase;
+    }
+    .x-card p { color: var(--muted); font-size: 15px; margin-bottom: 0; }
+    @media (min-width: 820px) {
+      .page { padding: 34px 26px 70px; }
+      .grid { grid-template-columns: minmax(0, 1.24fr) minmax(300px, .76fr); gap: 30px; }
+      article { padding: 18px; }
+      .news-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .lead { grid-column: span 2; padding: 24px; }
+      .lead h3 { font-size: 29px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="cover">
+      <div class="kicker">AI Daily Brief</div>
+      <h1>Machine<br>Intelligence</h1>
+      <p class="deck">A Toronto morning edition on AI power, policy, creative tooling, and the increasingly legal shape of the industry.</p>
+      <div class="meta">
+        <span>June 17, 2026</span>
+        <span>08:00 America/Toronto</span>
+        <span>10 Industry Items</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <div class="section-head">
+          <h2>Industry</h2>
+          <span class="count">Fixed 10</span>
+        </div>
+        <div class="news-grid stack">
+          <article class="lead">
+            <div class="num">01 · Reuters</div>
+            <h3><a href="https://www.reuters.com/business/europe-frets-about-us-ai-tech-world-flocks-france-g7-vivatech-2026-06-17/">Europe frets about US AI as tech world flocks to France for G7 and VivaTech</a></h3>
+            <p>欧洲科技主权成为法国 G7 与巴黎 VivaTech 的关键议题，政策制定者和科技高管把美国 AI 优势视为主要压力。</p>
+            <div class="source">Reuters</div>
+          </article>
+          <article>
+            <div class="num">02 · Reuters</div>
+            <h3><a href="https://www.reuters.com/business/world-at-work/ai-will-lead-labour-shortages-jeff-bezos-says-vivatech-2026-06-17/">AI will lead to labour shortages, Bezos says in optimistic talk</a></h3>
+            <p>Jeff Bezos 在 VivaTech 上给出乐观判断：AI 更可能造成劳动力短缺，而不是简单替代人类。</p>
+            <div class="source">Reuters</div>
+          </article>
+          <article>
+            <div class="num">03 · Reuters</div>
+            <h3><a href="https://www.reuters.com/business/media-telecom/publicis-chief-urges-france-germany-lead-european-ai-fund-2026-06-17/">Publicis chief urges France, Germany to lead European AI fund</a></h3>
+            <p>Publicis 董事长 Maurice Levy 呼吁法国与德国牵头建立泛欧洲 AI 基金，以回应欧洲在 AI 投资与主权能力上的焦虑。</p>
+            <div class="source">Reuters</div>
+          </article>
+          <article>
+            <div class="num">04 · The Verge</div>
+            <h3><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/1">Today’s Vergecast: The Mythos mess and your AI questions, answered</a></h3>
+            <p>The Verge 讨论 Anthropic 与美国政府围绕 Claude Fable 5 / Mythos 5 的争议，并延伸到美国 AI 例外主义、Siri AI 与 WhatsApp/Siri 互操作等问题。</p>
+            <div class="source">The Verge</div>
+          </article>
+          <article>
+            <div class="num">05 · The Verge</div>
+            <h3><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/1">xAI’s gas-powered data center is necessary for national security, DOJ argues</a></h3>
+            <p>美国司法部试图介入并驳回 NAACP 针对 xAI Mississippi 数据中心燃气涡轮污染的诉讼，理由是 Grok 对国防相关任务具有重要支持作用。</p>
+            <div class="source">The Verge</div>
+          </article>
+          <article>
+            <div class="num">06 · The Verge</div>
+            <h3><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/1">Disney is using Adobe AI for theme park Imagineering</a></h3>
+            <p>Walt Disney Imagineering 使用 Adobe Firefly Foundry 加速主题公园概念设计和预制作流程，包括从草图到渲染概念图、从 2D 图像到 3D 原型。</p>
+            <div class="source">The Verge</div>
+          </article>
+          <article>
+            <div class="num">07 · The Verge</div>
+            <h3><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/1">Epic lays out how it uses generative AI in Fortnite</a></h3>
+            <p>Epic 在角色与概念设计流程视频中说明其如何使用 Google Nano Banana 与内部 GenMedia Bridge 等 AI 工具，同时也引发创作者控制权与修复 AI 输出的讨论。</p>
+            <div class="source">The Verge</div>
+          </article>
+          <article>
+            <div class="num">08 · The Verge</div>
+            <h3><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/1">The government torpedoed Anthropic’s newest, most powerful model</a></h3>
+            <p>The Verge 报道称，Anthropic 和 AI 支持者试图解释 Fable 5 并非危险到不能发布，但政府层面的阻力仍成为焦点。</p>
+            <div class="source">The Verge</div>
+          </article>
+          <article>
+            <div class="num">09 · The Verge</div>
+            <h3><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/1">Elon Musk loses against OpenAI in court, again</a></h3>
+            <p>The Verge 记录了 Elon Musk 与 OpenAI 相关诉讼中的又一次不利进展，延续了 AI 公司治理与创始人争议的法律线索。</p>
+            <div class="source">The Verge</div>
+          </article>
+          <article>
+            <div class="num">10 · TechCrunch</div>
+            <h3><a href="https://techcrunch.com/category/artificial-intelligence/">AI News &amp; Artificial Intelligence coverage</a></h3>
+            <p>TechCrunch 的 AI 栏目继续聚焦生成式 AI、机器学习公司、伦理与商业化问题；今日公开可读栏目页未给出足够新的单篇正文，因此这里只保留栏目级核验入口。</p>
+            <div class="source">TechCrunch</div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>X Status</h2>
+          <span class="count">10 Accounts</span>
+        </div>
+        <div class="note">今日公开抓取通道对 X 内容临时限流，未能稳定核验这些账号的最新 status 正文。以下保留账号入口；不补写时间、互动数据或图片。</div>
+        <div class="stack">
+          <div class="x-card"><div class="handle"><strong>@AndrewYNg</strong><a href="https://x.com/AndrewYNg">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@Steve_Yegge</strong><a href="https://x.com/Steve_Yegge">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@openclaw</strong><a href="https://x.com/openclaw">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@nrqa__</strong><a href="https://x.com/nrqa__">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@alterxyz4</strong><a href="https://x.com/alterxyz4">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@indigox</strong><a href="https://x.com/indigox">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@AnthropicAI</strong><a href="https://x.com/AnthropicAI">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@bcherny</strong><a href="https://x.com/bcherny">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@zhengyun</strong><a href="https://x.com/zhengyun">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+          <div class="x-card"><div class="handle"><strong>@fankaishuoai</strong><a href="https://x.com/fankaishuoai">Open</a></div><p>今日未核验到公开可读 status 正文。</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
